@@ -6,13 +6,9 @@ class Session{
     private:
         std::string sessionType;
         std::string dateTime;
-        bool isPointAwarded;
+        std::string sessionResult;
     public:
-        Session(std::string type, std::string dt, bool points) : sessionType(type), dateTime(dt), isPointAwarded(points) {}
-        void displaySessionInfo(){
-            std::cout << "Session Type: " << sessionType << std::endl;
-            std::cout << "Date & Time: " << dateTime << std::endl;
-            std::cout << "Points Awarded: " << (isPointAwarded ? "Yes" : "No") << std::endl;
-        }
+        friend class GrandPrix;
+        Session(std::string type, std::string dt, std::string r) : sessionType(type), dateTime(dt), sessionResult(r) {}
 };
 #endif
