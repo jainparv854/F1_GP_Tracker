@@ -4,6 +4,8 @@
 #include <vector>
 #include "../include/Driver.h"
 #include "../include/Constructor.h"
+#include "../include/Session.h"
+#include "../include/GrandPrix.h"
 using namespace std;
 using json = nlohmann::json;
 int main(){
