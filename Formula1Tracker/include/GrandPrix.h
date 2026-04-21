@@ -15,7 +15,7 @@ class GrandPrix{
         void addSession(Session s){
             sessions.push_back(s);
     }
-        void displayRaceWeekendInfo(){
+        void displayRaceWeekendInfo() const{
             if(isCancelled){
                 std::cout << "The Grand Prix " << gpName << " at " << trackName << " has been cancelled." << std::endl;
                 return;

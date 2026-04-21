@@ -11,7 +11,7 @@ using json = nlohmann::json;
 
 void showDriverStandings(vector<Driver>& drivers){
     sort(drivers.begin(), drivers.end(), greater<Driver>());
-    for(auto& d : drivers){
+    for(const auto& d : drivers){
         d.display();
     }
 }
@@ -30,8 +30,16 @@ int main(){
     miami.displayRaceWeekendInfo();
     Driver d1("Max Verstappen", 395, true);
     Driver d2("Charles Leclerc", 300, false);
+    Driver d3("Sergio Perez", 200, false);
     Constructor Ferrari("Scuderia Ferrari", d1, d2);
-    Ferrari.calculateTotalPoints();
+    Constructor Mercedes("Mercedes-AMG Petronas", d3, Driver("Lewis Hamilton", 150, false));
     Ferrari.display();
+    Mercedes.display();
+    vector <Driver> drivers = {d1, d2, d3, Driver("Lewis Hamilton", 150, false)};
+    vector <Constructor> constructors = {Ferrari, Mercedes};
+    cout << "\nDriver Standings:" << endl;
+    showDriverStandings(drivers);
+    cout << "\nConstructor Standings:" << endl;
+    showConstructorStandings(constructors);
     return 0;
 }

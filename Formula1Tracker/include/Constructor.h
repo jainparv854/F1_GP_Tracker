@@ -17,6 +17,7 @@ private:
     }
 
     void display() {
+        calculateTotalPoints();
         std::cout << "Constructor: " << name << std::endl;
         std::cout << "Total Points: " << totalPoints << std::endl;
         std::cout << "Drivers: " << std::endl;
@@ -24,7 +25,7 @@ private:
         drivers[1].display();
     }
 
-    bool operator>(const Constructor& other){
+    bool operator>(const Constructor& other) const{
         return this->totalPoints > other.totalPoints;
     }
 };
