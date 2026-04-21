@@ -8,6 +8,21 @@
 #include "../include/GrandPrix.h"
 using namespace std;
 using json = nlohmann::json;
+
+void showDriverStandings(vector<Driver>& drivers){
+    sort(drivers.begin(), drivers.end(), greater<Driver>());
+    for(auto& d : drivers){
+        d.display();
+    }
+}
+
+void showConstructorStandings(vector<Constructor>& constructors){
+    sort(constructors.begin(), constructors.end(), greater<Constructor>());
+    for(auto& c : constructors){
+        c.display();
+    }
+}
+
 int main(){
     GrandPrix miami("Miami Grand Prix", "Miami International Autodrome");
     Session practice("Practice", "2026-05-03 10:00", "Verstappen fastest, Leclerc 2nd");
