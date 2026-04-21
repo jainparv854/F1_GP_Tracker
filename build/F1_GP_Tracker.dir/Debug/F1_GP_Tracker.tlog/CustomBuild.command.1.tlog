@@ -1,0 +1,10 @@
+^C:\USERS\JAINP\ONEDRIVE\DOCUMENTS\ESSENTIALS\PROJECTS\F1_GP_TRACKER\FORMULA1TRACKER\SRC\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/jainp/OneDrive/Documents/Essentials/Projects/F1_GP_Tracker/Formula1Tracker/src -BC:/Users/jainp/OneDrive/Documents/Essentials/Projects/F1_GP_Tracker/build --check-stamp-file C:/Users/jainp/OneDrive/Documents/Essentials/Projects/F1_GP_Tracker/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
