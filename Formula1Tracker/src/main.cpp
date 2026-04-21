@@ -9,6 +9,13 @@
 using namespace std;
 using json = nlohmann::json;
 
+void applyRaceResults(vector<Driver>& grid){
+    int pointsDistribution[] = {25, 18, 15, 12, 10, 8, 6, 4, 2, 1};
+    for(int i = 0; i < 10 && i < grid.size(); i++){
+        grid[i] = grid[i] + pointsDistribution[i];
+    }
+}
+
 void showDriverStandings(vector<Driver>& drivers){
     sort(drivers.begin(), drivers.end(), greater<Driver>());
     for(const auto& d : drivers){
