@@ -6,15 +6,10 @@ class Driver{
 private:
     std::string name;
     int points;
-    bool isChampion;
-
 public:
-    Driver(std::string n, int p, bool isC) : name(n), points(p), isChampion(isC) {}
+    Driver(std::string n, int p) : name(n), points(p) {}
     void display() const{
         std::cout << "Name: " << name << "\t\t" << points << std::endl;
-        if(isChampion){
-            std::cout << "World Champion" << std::endl;
-        }
     }
     std::string getName() const{
         return name;
