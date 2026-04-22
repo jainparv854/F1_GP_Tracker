@@ -24,7 +24,7 @@ class GrandPrix{
                 std::cout << "Track: " << trackName << std::endl;
                 std::cout << "Sessions: " << std::endl;
                 for(const auto& session : sessions){
-                    std::cout << "  - " << session.sessionType << " on " << session.dateTime << ": " << std::endl;
+                    std::cout << "  - " << session.sessionType << " on " << session.dateTime << std::endl;
                 }
             }
         }

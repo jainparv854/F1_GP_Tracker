@@ -9,6 +9,22 @@ using json = nlohmann::json;
 
 class networkManager{
     public:
+        static std::string toIst(std::string utc){
+            int hours = std::stoi(utc.substr(0, 2));
+            int minutes = std::stoi(utc.substr(3, 2));
+            minutes += 30;
+            if(minutes >= 60){
+                hours += 1;
+                minutes -= 60;
+            }
+            hours += 5;
+            if(hours >= 24){
+                hours -= 24;
+            }
+            std::string hStr = (hours < 10) ? "0" + std::to_string(hours) : std::to_string(hours);
+            std::string mStr = (minutes < 10) ? "0" + std::to_string(minutes) : std::to_string(minutes);
+            return hStr + ":" + mStr;
+        }
         static void fetchLiveStandings(std::vector<Driver>& standings) {
 
         cpr::Response r = cpr::Get(
@@ -79,38 +95,43 @@ class networkManager{
 
                 std::string date = item["date"];
                 std::string time = item["time"];
-
-
-                gp.addSession(Session("Race", date + " " + time + " UTC"));
+                std::string istTime = toIst(time);
+                gp.addSession(Session("Race", date + " " + istTime + " IST"));
                 if(item.contains("FirstPractice")){
                     std::string fpDate = item["FirstPractice"]["date"];
                     std::string fpTime = item["FirstPractice"]["time"];
-                    gp.addSession(Session("FP1", fpDate + " " + fpTime + " UTC"));
+                    std::string istFpTime = toIst(fpTime);
+                    gp.addSession(Session("FP1", fpDate + " " + istFpTime + " IST"));
                 }
                 if(item.contains("SecondPractice")){
                     std::string fpDate = item["SecondPractice"]["date"];
                     std::string fpTime = item["SecondPractice"]["time"];
-                    gp.addSession(Session("FP2", fpDate + " " + fpTime + " UTC"));
+                    std::string istFpTime = toIst(fpTime);
+                    gp.addSession(Session("FP2", fpDate + " " + istFpTime + " IST"));
                 }
                 if(item.contains("ThirdPractice")){
                     std::string fpDate = item["ThirdPractice"]["date"];
                     std::string fpTime = item["ThirdPractice"]["time"];
-                    gp.addSession(Session("FP3", fpDate + " " + fpTime + " UTC"));
+                    std::string istFpTime = toIst(fpTime);
+                    gp.addSession(Session("FP3", fpDate + " " + istFpTime + " IST"));
                 }
                 if(item.contains("Qualifying")){
                     std::string qDate = item["Qualifying"]["date"];
                     std::string qTime = item["Qualifying"]["time"];
-                    gp.addSession(Session("Qualifying", qDate + " " + qTime + " UTC"));
+                    std::string istQTime = toIst(qTime);
+                    gp.addSession(Session("Qualifying", qDate + " " + istQTime + " IST"));
                 }
                 if(item.contains("Sprint")){
                     std::string sDate = item["Sprint"]["date"];
                     std::string sTime = item["Sprint"]["time"];
-                    gp.addSession(Session("Sprint", sDate + " " + sTime + " UTC"));
+                    std::string istSTime = toIst(sTime);
+                    gp.addSession(Session("Sprint", sDate + " " + istSTime + " IST"));
                 }
                 if(item.contains("SprintQualifying")){
                     std::string sqDate = item["SprintQualifying"]["date"];
                     std::string sqTime = item["SprintQualifying"]["time"];
-                    gp.addSession(Session("Sprint Qualifying", sqDate + " " + sqTime + " UTC"));
+                    std::string istSqTime = toIst(sqTime);
+                    gp.addSession(Session("Sprint Qualifying", sqDate + " " + istSqTime + " IST"));
                 }
                 calendar.push_back(gp);
             }
