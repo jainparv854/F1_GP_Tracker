@@ -15,9 +15,9 @@ private:
     
 
     void display() {
-        std::cout << "Constructor: " << name << std::endl;
-        std::cout << "Total Points: " << totalPoints << std::endl;
-        std::cout << "Drivers: " << std::endl;
+        std::cout << name << std::endl;
+        std::cout << totalPoints << std::endl;
+        std::cout << std::endl;
         drivers[0].display();
         drivers[1].display();
     }
