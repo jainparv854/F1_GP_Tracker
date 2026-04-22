@@ -34,6 +34,7 @@ void showConstructorStandings(vector<Constructor>& constructors){
 int main(){
     vector<Driver> seasonStandings;
     networkManager::fetchLiveStandings(seasonStandings);
+    std::cout << "Name \t\t\tPoints" << std::endl;
     showDriverStandings(seasonStandings);
     return 0;
 }
