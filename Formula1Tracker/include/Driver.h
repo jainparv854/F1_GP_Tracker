@@ -5,12 +5,13 @@
 class Driver{
 private:
     std::string name;
-    int points;
+    std::string teamName;
+    float points;
     bool isChampion;
 public:
-    Driver(std::string n, int p, bool isC) : name(n), points(p), isChampion(isC) {}
+    Driver(std::string n, std::string t, float p, bool isC) : name(n), teamName(t), points(p), isChampion(isC) {}
     void display() const{
-        std::cout  << name << " \t\t\t" << points << std::endl;
+        std::cout  << name << " \t\t\t" << teamName << " \t\t\t" << points << std::endl;
         if(isChampion){
             std::cout << "World Champion" << std::endl;
         }
@@ -18,18 +19,17 @@ public:
     std::string getName() const{
         return name;
     }
+    std::string getTeamName() const{
+        return teamName;
+    }
 
     int getPoints() const{
         return points;
     }
 
-    Driver& operator+(int pointsEarned){
-        this->points += pointsEarned;
-        return *this;
-    }
-
     bool operator>(const Driver& other) const{
         return this->points > other.points;
     }
+    
 };
 #endif

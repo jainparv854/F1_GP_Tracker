@@ -10,13 +10,6 @@
 using namespace std;
 using json = nlohmann::json;
 
-void applyRaceResults(vector<Driver>& grid){
-    int pointsDistribution[] = {25, 18, 15, 12, 10, 8, 6, 4, 2, 1};
-    for(int i = 0; i < 10 && i < grid.size(); i++){
-        grid[i] = grid[i] + pointsDistribution[i];
-    }
-}
-
 void showDriverStandings(vector<Driver>& drivers){
     sort(drivers.begin(), drivers.end(), greater<Driver>());
     for(const auto& d : drivers){
@@ -34,7 +27,12 @@ void showConstructorStandings(vector<Constructor>& constructors){
 int main(){
     vector<Driver> seasonStandings;
     networkManager::fetchLiveStandings(seasonStandings);
-    std::cout << "Name \t\t\tPoints" << std::endl;
+    std::cout << "Name \t\t\tConstructor \t\t\tPoints" << std::endl;
     showDriverStandings(seasonStandings);
+
+    vector<Constructor> constructorStandings;
+    networkManager::fetchConstructorStandings(constructorStandings, seasonStandings);
+    cout << "Constructor \t\t\tPoints \t\t\tDrivers" << endl;
+    showConstructorStandings(constructorStandings);
     return 0;
 }

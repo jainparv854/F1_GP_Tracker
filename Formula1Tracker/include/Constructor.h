@@ -8,16 +8,13 @@ private:
 
     std::string name;
     Driver drivers[2];
-    int totalPoints{0};
+    float totalPoints;
 
     public:
-    Constructor(std::string n, Driver d1, Driver d2) : name(n), drivers{d1, d2} {}
-    void calculateTotalPoints() {
-        totalPoints = drivers[0].getPoints() + drivers[1].getPoints();
-    }
+    Constructor(std::string n, const Driver& d1, const Driver& d2, float p) : name(n), drivers{d1, d2}, totalPoints(p) {}
+    
 
     void display() {
-        calculateTotalPoints();
         std::cout << "Constructor: " << name << std::endl;
         std::cout << "Total Points: " << totalPoints << std::endl;
         std::cout << "Drivers: " << std::endl;
