@@ -10,7 +10,8 @@ private:
 public:
     Driver(std::string n, int p, bool isC) : name(n), points(p), isChampion(isC) {}
     void display() const{
-        std::cout << "Name: " << name << "\t\t" << points << std::endl;
+        std::cout << "Name \t\t\tPoints" << std::endl;
+        std::cout  << name << " \t\t\t" << points << std::endl;
         if(isChampion){
             std::cout << "World Champion" << std::endl;
         }
