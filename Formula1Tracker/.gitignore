@@ -11,3 +11,11 @@ build/
 vcpkg/
 build/
 *.exe
+
+*.png
+
+*.jpg
+*.jpeg
+
+
+build/

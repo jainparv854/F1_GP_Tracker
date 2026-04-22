@@ -1,129 +1,167 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@500;700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Orbitron', sans-serif;
-    background: radial-gradient(circle at top, #111 0%, #000 80%);
+body {
+    font-family: 'Rajdhani', sans-serif; /* Cleaner for UI text */
+    background: #0a0a0a;
     color: white;
+    height: 100vh;
     overflow: hidden;
+    position: relative;
 }
 
-/* GRID BACKGROUND (F1 telemetry feel) */
-body::after{
+/* CARBON FIBER & GRID OVERLAY */
+body::after {
     content: "";
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(rgba(255,0,0,0.08) 1px, transparent 1px),
-                      linear-gradient(90deg, rgba(255,0,0,0.08) 1px, transparent 1px);
-    background-size: 40px 40px;
+    inset: 0;
+    background-image: 
+        linear-gradient(rgba(255, 30, 0, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 30, 0, 0.05) 1px, transparent 1px),
+        radial-gradient(circle at 50% 50%, rgba(20, 20, 20, 0.4), #000);
+    background-size: 30px 30px, 30px 30px, 100% 100%;
     z-index: -1;
 }
 
-/* TOP GLOW LINE */
-body::before{
+/* TOP STATUS BAR (Engineered look) */
+body::before {
     content: "";
     position: absolute;
-    width: 100%;
-    height: 4px;
-    background: linear-gradient(to right, red, transparent);
     top: 0;
+    width: 100%;
+    height: 5px;
+    background: repeating-linear-gradient(
+        90deg,
+        #ff1e00,
+        #ff1e00 10%,
+        #000 10%,
+        #000 11%
+    );
+    box-shadow: 0 0 15px rgba(255, 30, 0, 0.5);
 }
 
-/* LOGO */
-.image{
+/* LOGO SECTION */
+.image {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 28vh;
+    padding-top: 40px;
 }
 
-img{
-    width: 260px;
-    filter: drop-shadow(0 0 25px #ff1e00);
-    animation: pulse 2s infinite alternate;
+img {
+    width: 220px;
+    filter: drop-shadow(0 0 15px rgba(255, 30, 0, 0.4));
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-@keyframes pulse {
-    from { filter: drop-shadow(0 0 10px red); }
-    to { filter: drop-shadow(0 0 30px red); }
+img:hover {
+    transform: scale(1.1) rotate(-2deg);
 }
 
-/* HEADING */
-.heading{
+/* HEADING (Dynamic Angles) */
+.heading {
     text-align: center;
-    margin-top: -10px;
+    margin-top: 20px;
+    position: relative;
 }
 
-.heading h1{
-    font-size: 3.2rem;
-    letter-spacing: 3px;
+.heading h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: -2px;
+    background: linear-gradient(to bottom, #fff 40%, #888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-transform: uppercase;
 }
 
-.heading .caremo{
+.heading h2 {
+    font-family: 'Rajdhani', sans-serif;
     color: #ff1e00;
-    font-size: 3.8rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    margin-top: 5px;
 }
 
-h2{
-    margin-top: 12px;
-    color: #888;
-    font-size: 1rem;
-    letter-spacing: 2px;
-}
-
-/* BUTTON SECTION */
-.button{
+/* ACTION BUTTONS (Cockpit Style) */
+.button-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40vh;
+    height: 35vh;
+    gap: 40px;
 }
 
-.first{
-    display: flex;
-    gap: 30px;
-}
-
-/* F1 TELEMETRY BUTTONS */
-.first button{
-    padding: 14px 35px;
-    font-size: 14px;
-    cursor: pointer;
-    border: 2px solid #ff1e00;
-    background: rgba(255, 30, 0, 0.05);
-    color: white;
-    border-radius: 50px;
-    transition: all 0.3s ease;
-    font-weight: bold;
-    letter-spacing: 2px;
+.f1-btn {
+    all: unset;
     position: relative;
-    overflow: hidden;
+    padding: 15px 45px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 4px solid #ff1e00;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+    transition: all 0.3s skew(5deg);
+    border: 1px solid rgba(255, 30, 0, 0.2);
 }
 
-/* BUTTON GLOW EFFECT */
-.first button::before{
+.f1-btn::after {
     content: "";
     position: absolute;
-    width: 0%;
+    bottom: 0;
+    left: 0;
+    width: 0;
     height: 100%;
-    background: linear-gradient(120deg, transparent, rgba(255,30,0,0.6), transparent);
-    top: 0;
-    left: -50%;
-    transition: 0.5s;
-}
-
-.first button:hover::before{
-    width: 200%;
-}
-
-.first button:hover{
     background: #ff1e00;
-    color: black;
-    box-shadow: 0 0 20px #ff1e00;
-    transform: translateY(-5px) scale(1.08);
+    z-index: -1;
+    transition: width 0.4s ease-in-out;
+}
+
+.f1-btn:hover {
+    color: #000;
+    box-shadow: -10px 10px 30px rgba(255, 30, 0, 0.3);
+    transform: translateX(5px);
+}
+
+.f1-btn:hover::after {
+    width: 100%;
+}
+
+/* DATA SYNC INDICATOR (Bottom right vibe) */
+.status-sync {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 10px;
+    color: #444;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background: #00ff00;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00ff00;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
 }
