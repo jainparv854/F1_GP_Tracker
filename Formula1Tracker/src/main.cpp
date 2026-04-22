@@ -34,5 +34,11 @@ int main(){
     networkManager::fetchConstructorStandings(constructorStandings, seasonStandings);
     cout << "Constructor \t\t\tPoints \t\t\tDrivers" << endl;
     showConstructorStandings(constructorStandings);
+
+    vector<GrandPrix> seasonSchedule;
+    networkManager::fetchSchedule(seasonSchedule);
+    for(const auto& gp : seasonSchedule){
+        gp.displayRaceWeekendInfo();
+    }
     return 0;
 }

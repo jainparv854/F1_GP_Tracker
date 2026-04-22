@@ -23,7 +23,7 @@ public:
         return teamName;
     }
 
-    int getPoints() const{
+    float getPoints() const{
         return points;
     }
 
