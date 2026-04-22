@@ -6,3 +6,8 @@ Development hurdles:
 - Since Powershell was being a dick, had to commit files manually into the github
 - Manual commit caused duplication of files so had to delete them with the legendary commit message gone to the bin(The message can be found in commit history still)
 - Need to learn and understand how to work with json and api's.
+- Needed to migrate to msvc(cl.exe) via vs builds.
+- Implemented cmake with manual cmakeList.
+- Ergast api retired as of now so had to migrate to its jolpica mirror.
+- It didn't let us grab the data so had to implement a custom user-agent header.(Finally the time started when AI help was needed)...
+- App now successfully displays live driver standings, in terminal as of now...
