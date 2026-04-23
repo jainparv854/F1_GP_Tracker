@@ -12,6 +12,7 @@ class GrandPrix{
         bool isCancelled{false};
     public:
         GrandPrix(std::string name, std::string track) : gpName(name), trackName(track) {}
+        friend void to_json(nlohmann::json& j, const GrandPrix& gp);
         void addSession(Session s){
             sessions.push_back(s);
     }
@@ -29,4 +30,12 @@ class GrandPrix{
             }
         }
 };
+inline void to_json(nlohmann::json& j, const GrandPrix& gp){
+    j = nlohmann::json{
+        {"gpName", gp.gpName},
+        {"trackName", gp.trackName},
+        {"sessions", gp.sessions},
+        {"isCancelled", gp.isCancelled}
+    };
+}
 #endif

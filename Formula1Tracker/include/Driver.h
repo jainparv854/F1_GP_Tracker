@@ -32,4 +32,7 @@ public:
     }
     
 };
+inline void to_json(nlohmann::json& j, const Driver& d) {
+    j = nlohmann::json{{"name", d.getName()}, {"teamName", d.getTeamName()}, {"points", d.getPoints()}};
+}
 #endif

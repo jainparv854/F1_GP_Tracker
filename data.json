@@ -1,0 +1,888 @@
+{
+    "schedule": [
+        {
+            "gpName": "Australian Grand Prix",
+            "isCancelled": false,
+            "sessions": [
+                {
+                    "dateTime": "2026-03-08 09:30 IST",
+                    "type": "Race"
+                },
+                {
+                    "dateTime": "2026-03-06 07:00 IST",
+                    "type": "FP1"
+                },
+                {
+                    "dateTime": "2026-03-06 10:30 IST",
+                    "type": "FP2"
+                },
+                {
+                    "dateTime": "2026-03-07 07:00 IST",
+                    "type": "FP3"
+                },
+                {
+                    "dateTime": "2026-03-07 10:30 IST",
+                    "type": "Qualifying"
+                }
+            ],
+            "trackName": "Albert Park Grand Prix Circuit"
+        },
+        {
+            "gpName": "Chinese Grand Prix",
+            "isCancelled": false,
+            "sessions": [
+                {
+                    "dateTime": "2026-03-15 12:30 IST",
+                    "type": "Race"
+                },
+                {
+                    "dateTime": "2026-03-13 09:00 IST",
+                    "type": "FP1"
+                },
+                {
+                    "dateTime": "2026-03-14 12:30 IST",
+                    "type": "Qualifying"
+                },
+                {
+                    "dateTime": "2026-03-14 08:30 IST",
+                    "type": "Sprint"
+                },
+                {
+                    "dateTime": "2026-03-13 13:00 IST",
+                    "type": "Sprint Qualifying"
+                }
+            ],
+            "trackName": "Shanghai International Circuit"
+        },
+        {
+            "gpName": "Japanese Grand Prix",
+            "isCancelled": false,
+            "sessions": [
+                {
+                    "dateTime": "2026-03-29 10:30 IST",
+                    "type": "Race"
+                },
+                {
+                    "dateTime": "2026-03-27 08:00 IST",
+                    "type": "FP1"
+                },
+                {
+                    "dateTime": "2026-03-27 11:30 IST",
+                    "type": "FP2"
+                },
+                {
+                    "dateTime": "2026-03-28 08:00 IST",
+                    "type": "FP3"
+                },
+                {
+                    "dateTime": "2026-03-28 11:30 IST",
+                    "type": "Qualifying"
+                }
+            ],
+            "trackName": "Suzuka Circuit"
+        },
+        {
+            "gpName": "Miami Grand Prix",
+            "isCancelled": false,
+            "sessions": [
+                {
+                    "dateTime": "2026-05-03 01:30 IST",
+                    "type": "Race"
+                },
+                {
+                    "dateTime": "2026-05-01 22:00 IST",
+                    "type": "FP1"
+                },
+                {
+                    "dateTime": "2026-05-02 01:30 IST",
+                    "type": "Qualifying"
+                },
+                {
+                    "dateTime": "2026-05-02 21:30 IST",
+                    "type": "Sprint"
+                },
+                {
+                    "dateTime": "2026-05-01 02:00 IST",
+                    "type": "Sprint Qualifying"
+                }
+            ],
+            "trackName": "Miami International Autodrome"
+        },
+        {
+            "gpName": "Canadian Grand Prix",
+            "isCancelled": false,
+            "sessions": [
+                {
+                    "dateTime": "2026-05-24 01:30 IST",
+                    "type": "Race"
+                },
+                {
+                    "dateTime": "2026-05-22 22:00 IST",
+                    "type": "FP1"
+                },
+                {
+                    "dateTime": "2026-05-23 01:30 IST",
+                    "type": "Qualifying"
+                },
+                {
+                    "dateTime": "2026-05-23 21:30 IST",
+                    "type": "Sprint"
+                },
+                {
+                    "dateTime": "2026-05-22 02:00 IST",
+                    "type": "Sprint Qualifying"
+                }
+            ],
+            "trackName": "Circuit Gilles Villeneuve"
+        },
+        {
+            "gpName": "Monaco Grand Prix",
+            "isCancelled": false,
+            "sessions": [
+                {
+                    "dateTime": "2026-06-07 18:30 IST",
+                    "type": "Race"
+                },
+                {
+                    "dateTime": "2026-06-05 17:00 IST",
+                    "type": "FP1"
+                },
+                {
+                    "dateTime": "2026-06-05 20:30 IST",
+                    "type": "FP2"
+                },
+                {
+                    "dateTime": "2026-06-06 16:00 IST",
+                    "type": "FP3"
+                },
+                {
+                    "dateTime": "2026-06-06 19:30 IST",
+                    "type": "Qualifying"
+                }
+            ],
+            "trackName": "Circuit de Monaco"
+        },
+        {
+            "gpName": "Barcelona Grand Prix",
+            "isCancelled": false,
+            "sessions": [
+                {
+                    "dateTime": "2026-06-14 18:30 IST",
+                    "type": "Race"
+                },
+                {
+                    "dateTime": "2026-06-12 17:00 IST",
+                    "type": "FP1"
+                },
+                {
+                    "dateTime": "2026-06-12 20:30 IST",
+                    "type": "FP2"
+                },
+                {
+                    "dateTime": "2026-06-13 16:00 IST",
+                    "type": "FP3"
+                },
+                {
+                    "dateTime": "2026-06-13 19:30 IST",
+                    "type": "Qualifying"
+                }
+            ],
+            "trackName": "Circuit de Barcelona-Catalunya"
+        },
+        {
+            "gpName": "Austrian Grand Prix",
+            "isCancelled": false,
+            "sessions": [
+                {
+                    "dateTime": "2026-06-28 18:30 IST",
+                    "type": "Race"
+                },
+                {
+                    "dateTime": "2026-06-26 17:00 IST",
+                    "type": "FP1"
+                },
+                {
+                    "dateTime": "2026-06-26 20:30 IST",
+                    "type": "FP2"
+                },
+                {
+                    "dateTime": "2026-06-27 16:00 IST",
+                    "type": "FP3"
+                },
+                {
+                    "dateTime": "2026-06-27 19:30 IST",
+                    "type": "Qualifying"
+                }
+            ],
+            "trackName": "Red Bull Ring"
+        },
+        {
+            "gpName": "British Grand Prix",
+            "isCancelled": false,
+            "sessions": [
+                {
+                    "dateTime": "2026-07-05 19:30 IST",
+                    "type": "Race"
+                },
+                {
+                    "dateTime": "2026-07-03 17:00 IST",
+                    "type": "FP1"
+                },
+                {
+                    "dateTime": "2026-07-04 20:30 IST",
+                    "type": "Qualifying"
+                },
+                {
+                    "dateTime": "2026-07-04 16:30 IST",
+                    "type": "Sprint"
+                },
+                {
+                    "dateTime": "2026-07-03 21:00 IST",
+                    "type": "Sprint Qualifying"
+                }
+            ],
+            "trackName": "Silverstone Circuit"
+        },
+        {
+            "gpName": "Belgian Grand Prix",
+            "isCancelled": false,
+            "sessions": [
+                {
+                    "dateTime": "2026-07-19 18:30 IST",
+                    "type": "Race"
+                },
+                {
+                    "dateTime": "2026-07-17 17:00 IST",
+                    "type": "FP1"
+                },
+                {
+                    "dateTime": "2026-07-17 20:30 IST",
+                    "type": "FP2"
+                },
+                {
+                    "dateTime": "2026-07-18 16:00 IST",
+                    "type": "FP3"
+                },
+                {
+                    "dateTime": "2026-07-18 19:30 IST",
+                    "type": "Qualifying"
+                }
+            ],
+            "trackName": "Circuit de Spa-Francorchamps"
+        },
+        {
+            "gpName": "Hungarian Grand Prix",
+            "isCancelled": false,
+            "sessions": [
+                {
+                    "dateTime": "2026-07-26 18:30 IST",
+                    "type": "Race"
+                },
+                {
+                    "dateTime": "2026-07-24 17:00 IST",
+                    "type": "FP1"
+                },
+                {
+                    "dateTime": "2026-07-24 20:30 IST",
+                    "type": "FP2"
+                },
+                {
+                    "dateTime": "2026-07-25 16:00 IST",
+                    "type": "FP3"
+                },
+                {
+                    "dateTime": "2026-07-25 19:30 IST",
+                    "type": "Qualifying"
+                }
+            ],
+            "trackName": "Hungaroring"
+        },
+        {
+            "gpName": "Dutch Grand Prix",
+            "isCancelled": false,
+            "sessions": [
+                {
+                    "dateTime": "2026-08-23 18:30 IST",
+                    "type": "Race"
+                },
+                {
+                    "dateTime": "2026-08-21 16:00 IST",
+                    "type": "FP1"
+                },
+                {
+                    "dateTime": "2026-08-22 19:30 IST",
+                    "type": "Qualifying"
+                },
+                {
+                    "dateTime": "2026-08-22 15:30 IST",
+                    "type": "Sprint"
+                },
+                {
+                    "dateTime": "2026-08-21 20:00 IST",
+                    "type": "Sprint Qualifying"
+                }
+            ],
+            "trackName": "Circuit Park Zandvoort"
+        },
+        {
+            "gpName": "Italian Grand Prix",
+            "isCancelled": false,
+            "sessions": [
+                {
+                    "dateTime": "2026-09-06 18:30 IST",
+                    "type": "Race"
+                },
+                {
+                    "dateTime": "2026-09-04 16:00 IST",
+                    "type": "FP1"
+                },
+                {
+                    "dateTime": "2026-09-04 19:30 IST",
+                    "type": "FP2"
+                },
+                {
+                    "dateTime": "2026-09-05 16:00 IST",
+                    "type": "FP3"
+                },
+                {
+                    "dateTime": "2026-09-05 19:30 IST",
+                    "type": "Qualifying"
+                }
+            ],
+            "trackName": "Autodromo Nazionale di Monza"
+        },
+        {
+            "gpName": "Spanish Grand Prix",
+            "isCancelled": false,
+            "sessions": [
+                {
+                    "dateTime": "2026-09-13 18:30 IST",
+                    "type": "Race"
+                },
+                {
+                    "dateTime": "2026-09-11 17:00 IST",
+                    "type": "FP1"
+                },
+                {
+                    "dateTime": "2026-09-11 20:30 IST",
+                    "type": "FP2"
+                },
+                {
+                    "dateTime": "2026-09-12 16:00 IST",
+                    "type": "FP3"
+                },
+                {
+                    "dateTime": "2026-09-12 19:30 IST",
+                    "type": "Qualifying"
+                }
+            ],
+            "trackName": "Madring"
+        },
+        {
+            "gpName": "Azerbaijan Grand Prix",
+            "isCancelled": false,
+            "sessions": [
+                {
+                    "dateTime": "2026-09-26 16:30 IST",
+                    "type": "Race"
+                },
+                {
+                    "dateTime": "2026-09-24 14:00 IST",
+                    "type": "FP1"
+                },
+                {
+                    "dateTime": "2026-09-24 17:30 IST",
+                    "type": "FP2"
+                },
+                {
+                    "dateTime": "2026-09-25 14:00 IST",
+                    "type": "FP3"
+                },
+                {
+                    "dateTime": "2026-09-25 17:30 IST",
+                    "type": "Qualifying"
+                }
+            ],
+            "trackName": "Baku City Circuit"
+        },
+        {
+            "gpName": "Singapore Grand Prix",
+            "isCancelled": false,
+            "sessions": [
+                {
+                    "dateTime": "2026-10-11 17:30 IST",
+                    "type": "Race"
+                },
+                {
+                    "dateTime": "2026-10-09 14:00 IST",
+                    "type": "FP1"
+                },
+                {
+                    "dateTime": "2026-10-10 18:30 IST",
+                    "type": "Qualifying"
+                },
+                {
+                    "dateTime": "2026-10-10 14:30 IST",
+                    "type": "Sprint"
+                },
+                {
+                    "dateTime": "2026-10-09 18:00 IST",
+                    "type": "Sprint Qualifying"
+                }
+            ],
+            "trackName": "Marina Bay Street Circuit"
+        },
+        {
+            "gpName": "United States Grand Prix",
+            "isCancelled": false,
+            "sessions": [
+                {
+                    "dateTime": "2026-10-25 01:30 IST",
+                    "type": "Race"
+                },
+                {
+                    "dateTime": "2026-10-23 23:00 IST",
+                    "type": "FP1"
+                },
+                {
+                    "dateTime": "2026-10-23 02:30 IST",
+                    "type": "FP2"
+                },
+                {
+                    "dateTime": "2026-10-24 23:00 IST",
+                    "type": "FP3"
+                },
+                {
+                    "dateTime": "2026-10-24 02:30 IST",
+                    "type": "Qualifying"
+                }
+            ],
+            "trackName": "Circuit of the Americas"
+        },
+        {
+            "gpName": "Mexico City Grand Prix",
+            "isCancelled": false,
+            "sessions": [
+                {
+                    "dateTime": "2026-11-01 01:30 IST",
+                    "type": "Race"
+                },
+                {
+                    "dateTime": "2026-10-30 00:00 IST",
+                    "type": "FP1"
+                },
+                {
+                    "dateTime": "2026-10-30 03:30 IST",
+                    "type": "FP2"
+                },
+                {
+                    "dateTime": "2026-10-31 23:00 IST",
+                    "type": "FP3"
+                },
+                {
+                    "dateTime": "2026-10-31 02:30 IST",
+                    "type": "Qualifying"
+                }
+            ],
+            "trackName": "Autódromo Hermanos Rodríguez"
+        },
+        {
+            "gpName": "Brazilian Grand Prix",
+            "isCancelled": false,
+            "sessions": [
+                {
+                    "dateTime": "2026-11-08 22:30 IST",
+                    "type": "Race"
+                },
+                {
+                    "dateTime": "2026-11-06 21:00 IST",
+                    "type": "FP1"
+                },
+                {
+                    "dateTime": "2026-11-06 00:30 IST",
+                    "type": "FP2"
+                },
+                {
+                    "dateTime": "2026-11-07 20:00 IST",
+                    "type": "FP3"
+                },
+                {
+                    "dateTime": "2026-11-07 23:30 IST",
+                    "type": "Qualifying"
+                }
+            ],
+            "trackName": "Autódromo José Carlos Pace"
+        },
+        {
+            "gpName": "Las Vegas Grand Prix",
+            "isCancelled": false,
+            "sessions": [
+                {
+                    "dateTime": "2026-11-22 09:30 IST",
+                    "type": "Race"
+                },
+                {
+                    "dateTime": "2026-11-20 06:00 IST",
+                    "type": "FP1"
+                },
+                {
+                    "dateTime": "2026-11-20 09:30 IST",
+                    "type": "FP2"
+                },
+                {
+                    "dateTime": "2026-11-21 06:00 IST",
+                    "type": "FP3"
+                },
+                {
+                    "dateTime": "2026-11-21 09:30 IST",
+                    "type": "Qualifying"
+                }
+            ],
+            "trackName": "Las Vegas Strip Street Circuit"
+        },
+        {
+            "gpName": "Qatar Grand Prix",
+            "isCancelled": false,
+            "sessions": [
+                {
+                    "dateTime": "2026-11-29 21:30 IST",
+                    "type": "Race"
+                },
+                {
+                    "dateTime": "2026-11-27 19:00 IST",
+                    "type": "FP1"
+                },
+                {
+                    "dateTime": "2026-11-27 22:30 IST",
+                    "type": "FP2"
+                },
+                {
+                    "dateTime": "2026-11-28 20:00 IST",
+                    "type": "FP3"
+                },
+                {
+                    "dateTime": "2026-11-28 23:30 IST",
+                    "type": "Qualifying"
+                }
+            ],
+            "trackName": "Losail International Circuit"
+        },
+        {
+            "gpName": "Abu Dhabi Grand Prix",
+            "isCancelled": false,
+            "sessions": [
+                {
+                    "dateTime": "2026-12-06 18:30 IST",
+                    "type": "Race"
+                },
+                {
+                    "dateTime": "2026-12-04 15:00 IST",
+                    "type": "FP1"
+                },
+                {
+                    "dateTime": "2026-12-04 18:30 IST",
+                    "type": "FP2"
+                },
+                {
+                    "dateTime": "2026-12-05 16:00 IST",
+                    "type": "FP3"
+                },
+                {
+                    "dateTime": "2026-12-05 19:30 IST",
+                    "type": "Qualifying"
+                }
+            ],
+            "trackName": "Yas Marina Circuit"
+        }
+    ],
+    "standings": [
+        {
+            "name": "Antonelli",
+            "points": 72.0,
+            "teamName": "Mercedes"
+        },
+        {
+            "name": "Russell",
+            "points": 63.0,
+            "teamName": "Mercedes"
+        },
+        {
+            "name": "Leclerc",
+            "points": 49.0,
+            "teamName": "Ferrari"
+        },
+        {
+            "name": "Hamilton",
+            "points": 41.0,
+            "teamName": "Ferrari"
+        },
+        {
+            "name": "Norris",
+            "points": 25.0,
+            "teamName": "McLaren"
+        },
+        {
+            "name": "Piastri",
+            "points": 21.0,
+            "teamName": "McLaren"
+        },
+        {
+            "name": "Bearman",
+            "points": 17.0,
+            "teamName": "Haas F1 Team"
+        },
+        {
+            "name": "Gasly",
+            "points": 15.0,
+            "teamName": "Alpine F1 Team"
+        },
+        {
+            "name": "Verstappen",
+            "points": 12.0,
+            "teamName": "Red Bull"
+        },
+        {
+            "name": "Lawson",
+            "points": 10.0,
+            "teamName": "RB F1 Team"
+        },
+        {
+            "name": "Lindblad",
+            "points": 4.0,
+            "teamName": "RB F1 Team"
+        },
+        {
+            "name": "Hadjar",
+            "points": 4.0,
+            "teamName": "Red Bull"
+        },
+        {
+            "name": "Bortoleto",
+            "points": 2.0,
+            "teamName": "Audi"
+        },
+        {
+            "name": "Sainz",
+            "points": 2.0,
+            "teamName": "Williams"
+        },
+        {
+            "name": "Ocon",
+            "points": 1.0,
+            "teamName": "Haas F1 Team"
+        },
+        {
+            "name": "Colapinto",
+            "points": 1.0,
+            "teamName": "Alpine F1 Team"
+        },
+        {
+            "name": "Hülkenberg",
+            "points": 0.0,
+            "teamName": "Audi"
+        },
+        {
+            "name": "Albon",
+            "points": 0.0,
+            "teamName": "Williams"
+        },
+        {
+            "name": "Bottas",
+            "points": 0.0,
+            "teamName": "Cadillac F1 Team"
+        },
+        {
+            "name": "Pérez",
+            "points": 0.0,
+            "teamName": "Cadillac F1 Team"
+        },
+        {
+            "name": "Alonso",
+            "points": 0.0,
+            "teamName": "Aston Martin"
+        },
+        {
+            "name": "Stroll",
+            "points": 0.0,
+            "teamName": "Aston Martin"
+        }
+    ],
+    "teams": [
+        {
+            "drivers": [
+                {
+                    "name": "Antonelli",
+                    "points": 72.0,
+                    "teamName": "Mercedes"
+                },
+                {
+                    "name": "Russell",
+                    "points": 63.0,
+                    "teamName": "Mercedes"
+                }
+            ],
+            "name": "Mercedes",
+            "totalPoints": 135.0
+        },
+        {
+            "drivers": [
+                {
+                    "name": "Leclerc",
+                    "points": 49.0,
+                    "teamName": "Ferrari"
+                },
+                {
+                    "name": "Hamilton",
+                    "points": 41.0,
+                    "teamName": "Ferrari"
+                }
+            ],
+            "name": "Ferrari",
+            "totalPoints": 90.0
+        },
+        {
+            "drivers": [
+                {
+                    "name": "Norris",
+                    "points": 25.0,
+                    "teamName": "McLaren"
+                },
+                {
+                    "name": "Piastri",
+                    "points": 21.0,
+                    "teamName": "McLaren"
+                }
+            ],
+            "name": "McLaren",
+            "totalPoints": 46.0
+        },
+        {
+            "drivers": [
+                {
+                    "name": "Bearman",
+                    "points": 17.0,
+                    "teamName": "Haas F1 Team"
+                },
+                {
+                    "name": "Ocon",
+                    "points": 1.0,
+                    "teamName": "Haas F1 Team"
+                }
+            ],
+            "name": "Haas F1 Team",
+            "totalPoints": 18.0
+        },
+        {
+            "drivers": [
+                {
+                    "name": "Gasly",
+                    "points": 15.0,
+                    "teamName": "Alpine F1 Team"
+                },
+                {
+                    "name": "Colapinto",
+                    "points": 1.0,
+                    "teamName": "Alpine F1 Team"
+                }
+            ],
+            "name": "Alpine F1 Team",
+            "totalPoints": 16.0
+        },
+        {
+            "drivers": [
+                {
+                    "name": "Verstappen",
+                    "points": 12.0,
+                    "teamName": "Red Bull"
+                },
+                {
+                    "name": "Hadjar",
+                    "points": 4.0,
+                    "teamName": "Red Bull"
+                }
+            ],
+            "name": "Red Bull",
+            "totalPoints": 16.0
+        },
+        {
+            "drivers": [
+                {
+                    "name": "Lawson",
+                    "points": 10.0,
+                    "teamName": "RB F1 Team"
+                },
+                {
+                    "name": "Lindblad",
+                    "points": 4.0,
+                    "teamName": "RB F1 Team"
+                }
+            ],
+            "name": "RB F1 Team",
+            "totalPoints": 14.0
+        },
+        {
+            "drivers": [
+                {
+                    "name": "Bortoleto",
+                    "points": 2.0,
+                    "teamName": "Audi"
+                },
+                {
+                    "name": "Hülkenberg",
+                    "points": 0.0,
+                    "teamName": "Audi"
+                }
+            ],
+            "name": "Audi",
+            "totalPoints": 2.0
+        },
+        {
+            "drivers": [
+                {
+                    "name": "Sainz",
+                    "points": 2.0,
+                    "teamName": "Williams"
+                },
+                {
+                    "name": "Albon",
+                    "points": 0.0,
+                    "teamName": "Williams"
+                }
+            ],
+            "name": "Williams",
+            "totalPoints": 2.0
+        },
+        {
+            "drivers": [
+                {
+                    "name": "Bottas",
+                    "points": 0.0,
+                    "teamName": "Cadillac F1 Team"
+                },
+                {
+                    "name": "Pérez",
+                    "points": 0.0,
+                    "teamName": "Cadillac F1 Team"
+                }
+            ],
+            "name": "Cadillac F1 Team",
+            "totalPoints": 0.0
+        },
+        {
+            "drivers": [
+                {
+                    "name": "Alonso",
+                    "points": 0.0,
+                    "teamName": "Aston Martin"
+                },
+                {
+                    "name": "Stroll",
+                    "points": 0.0,
+                    "teamName": "Aston Martin"
+                }
+            ],
+            "name": "Aston Martin",
+            "totalPoints": 0.0
+        }
+    ]
+}

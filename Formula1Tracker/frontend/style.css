@@ -7,15 +7,15 @@
 }
 
 body {
-    font-family: 'Rajdhani', sans-serif; /* Cleaner for UI text */
+    font-family: 'Rajdhani', sans-serif;
     background: #0a0a0a;
     color: white;
     height: 100vh;
-    overflow: hidden;
+    overflow: auto;
     position: relative;
 }
 
-/* CARBON FIBER & GRID OVERLAY */
+
 body::after {
     content: "";
     position: absolute;
@@ -28,7 +28,7 @@ body::after {
     z-index: -1;
 }
 
-/* TOP STATUS BAR (Engineered look) */
+
 body::before {
     content: "";
     position: absolute;
@@ -45,7 +45,6 @@ body::before {
     box-shadow: 0 0 15px rgba(255, 30, 0, 0.5);
 }
 
-/* LOGO SECTION */
 .image {
     display: flex;
     justify-content: center;
@@ -62,7 +61,7 @@ img:hover {
     transform: scale(1.1) rotate(-2deg);
 }
 
-/* HEADING (Dynamic Angles) */
+
 .heading {
     text-align: center;
     margin-top: 20px;
@@ -92,7 +91,7 @@ img:hover {
     margin-top: 5px;
 }
 
-/* ACTION BUTTONS (Cockpit Style) */
+
 .button-container {
     display: flex;
     justify-content: center;
@@ -140,7 +139,7 @@ img:hover {
     width: 100%;
 }
 
-/* DATA SYNC INDICATOR (Bottom right vibe) */
+
 .status-sync {
     position: absolute;
     bottom: 20px;
@@ -165,4 +164,44 @@ img:hover {
 @keyframes blink {
     0%, 100% { opacity: 1; }
     50% { opacity: 0.3; }
+}
+
+#main-display-area {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto 100px auto;
+    background: rgba(10, 10, 10, 0.8);
+    border: 1px solid #ff1e00;
+    border-radius: 5px;
+    padding: 10px;
+    min-height: 300px;
+    box-shadow: 0 0 20px rgba(255, 30, 0, 0.1); 
+}
+
+
+.driver-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #333;
+    font-family: 'Rajdhani', sans-serif;
+    color: #ffffff !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+}
+
+.driver-row:hover {
+    background: rgba(255, 30, 0, 0.05);
+}
+
+.name {
+    font-weight: bold;
+    color: #ff1e00; 
+}
+
+.points {
+    font-family: 'Orbitron', sans-serif; 
+    color: #00ff00;
 }

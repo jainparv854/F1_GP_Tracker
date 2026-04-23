@@ -18,7 +18,7 @@
     </div>
 
     <div class="button-container">
-        <button class="f1-btn" id="drivers">Standings</button>
+        <button class="f1-btn" id="drivers">Driver Standings</button>
         <button class="f1-btn" id="constructors">Constructors</button>
         <button class="f1-btn" id="races">Schedule</button>
     </div>
@@ -27,6 +27,86 @@
         <div class="dot"></div>
         <span>LIVE DATA STREAM // SYNCED // SRMIST_LAB_01</span>
     </div>
+    <div id="main-display-area" style="margin-top: 30px; padding: 20px;">
+    <div id="drivers-list"></div>
+    <div id="constructors-list" style="display:none;"></div>
+    <div id="schedule-list" style="display:none;"></div>
+    </div>
+    <script>
+    console.log("1. Telemetry System Booting...");
 
+    async function loadData() {
+        console.log("2. Attempting to fetch data.json...");
+        try {
+            const response = await fetch('data.json');
+            const data = await response.json();
+            console.log("3. Data received! Content:", data);
+            
+            const driverContainer = document.getElementById('drivers-list');
+            const teamContainer = document.getElementById('constructors-list');
+            const raceContainer = document.getElementById('schedule-list');
+
+            console.log("4. Container check:", { 
+                drivers: !!driverContainer, 
+                teams: !!teamContainer, 
+                races: !!raceContainer 
+            });
+
+            if (data.standings && driverContainer) {
+                console.log("5. Mapping drivers...");
+                driverContainer.innerHTML = data.standings.map(d => `
+                    <div class="driver-row">
+                        <span class="name">${d.name}</span>
+                        <span class="team">${d.teamName}</span>
+                        <span class="points">${d.points} PTS</span>
+                    </div>
+                `).join('');
+            }
+
+            if (data.teams && teamContainer) {
+                console.log("6. Mapping teams...");
+                teamContainer.innerHTML = data.teams.map(t => `
+                    <div class="driver-row" style="border-left-color: #ffffff;">
+                        <span class="name">${t.name}</span>
+                        <span class="points">${t.totalPoints} PTS</span>
+                    </div>
+                `).join('');
+            }
+
+            if (data.schedule && raceContainer) {
+                console.log("7. Mapping schedule...");
+                raceContainer.innerHTML = data.schedule.map(r => {
+                    const mainRace = r.sessions.find(s => s.type === "Race") || r.sessions[0];
+                    return `
+                        <div class="driver-row" style="border-left-color: #00ff00;">
+                            <span class="name">${r.gpName}</span>
+                            <span class="points">${mainRace.dateTime}</span>
+                        </div>
+                    `;
+                }).join('');
+            }
+
+        } catch (e) {
+            console.error("CRASH AT STEP 2/3:", e);
+        }
+    }
+
+    // Button Logic
+    function showSection(id) {
+        console.log("Button Clicked: Showing " + id);
+        document.getElementById('drivers-list').style.display = 'none';
+        document.getElementById('constructors-list').style.display = 'none';
+        document.getElementById('schedule-list').style.display = 'none';
+        document.getElementById(id).style.display = 'block';
+    }
+
+    document.getElementById('drivers').onclick = () => showSection('drivers-list');
+    document.getElementById('constructors').onclick = () => showSection('constructors-list');
+    document.getElementById('races').onclick = () => showSection('schedule-list');
+
+    // 8. The Ignition
+    console.log("8. Triggering loadData()...");
+    loadData();
+</script>
 </body>
 </html>
