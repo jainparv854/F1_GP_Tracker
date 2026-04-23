@@ -11,3 +11,9 @@ Development hurdles:
 - Ergast api retired as of now so had to migrate to its jolpica mirror.
 - It didn't let us grab the data so had to implement a custom user-agent header.(Finally the time started when AI help was needed)...
 - App now successfully displays live driver standings, in terminal as of now...
+- Made basic frontend.
+- Added some aesthetics to frontend(AI)
+- Had trouble finding out where data.json is being made.
+- Somehow fixed it(Idk how).
+- Completed the app within a week.
+  
