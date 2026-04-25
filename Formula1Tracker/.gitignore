@@ -8,3 +8,4 @@ bin/
 *.png
 *.jpg
 *.jpeg
+data_old.json
