@@ -1,21 +1,10 @@
-# Compiled Binaries
+vcpkg/
+build/
+.vscode/
+bin/
 *.exe
 *.o
 *.out
-
-# IDE Folders
-.vscode/
-.idea/
-bin/
-build/
-vcpkg/
-build/
-*.exe
-
 *.png
-
 *.jpg
 *.jpeg
-
-
-build/
